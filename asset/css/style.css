@@ -1,0 +1,128 @@
+*{
+    margin: 0px auto;
+    padding: 0px;
+}
+.wrapper, .hero-section{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    font-family: 'Poppins';
+    font-size: 16px;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+}
+.wrapper{
+    box-shadow: 4px 0px 6px rgb(182, 182, 182);
+}
+.wrap-nav{
+    height: 80px;
+    display: flex;
+}
+.nav-item{
+    flex-basis: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav-item:nth-child(2){
+    flex-basis: 85%;
+}
+.link-style, .item-nav-lists{
+    padding: 6px;
+    margin: 8px;
+    cursor: pointer;
+}
+.img-resize-nav{
+    width: 70px;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+.link-style{
+    text-decoration: none;
+    color: #000;
+}
+.content-hero-0 {
+    height: 600px;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Poppins";
+    justify-content: center;
+    position: relative;
+    z-index: 1; /* Pastikan konten berada di atas background */
+}
+.content-hero-0::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: -1; /* Background berada di belakang konten */
+    background: linear-gradient(45deg, transparent 48%, #d4af37 50%, transparent 52%);
+    background-size: 150% 150%;
+    opacity: 0.5; /* Atur transparansi sesuai kebutuhan */
+    animation: gradient-animation 6s ease infinite; /* Animasi pergerakan gradient */
+}
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+.highlight-box {
+    padding: 15px;
+    border-radius: 60px;
+    background-color: none;
+    border: 1px solid black;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 400;
+    justify-content: center;
+}
+.headline-hero {
+    padding: 20px;
+    text-align: center;
+    font-size: 90px;
+    color: #0c0b0b;
+    text-transform: uppercase;
+}
+.link-hg {
+    text-decoration: none;
+}
+.caption-hero {
+    padding: 15px;
+    width: 65%;
+    font-family: "Poppins";
+    font-size: 20px;
+    color: #242222;
+    word-wrap: break-word;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    position: relative;
+    bottom: 15px;
+}
+.button {
+    padding: 15px;
+    border: 1px solid black;
+    outline: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.button-start {
+    font-family: "Poppins";
+    font-size: 15px;
+    border: 1px solid #033980;
+    background-color: #033980;
+    color: #fff;
+}
+.button-start:hover {
+    background-color: #08479b;
+}
